@@ -1,0 +1,34 @@
+﻿<Window x:Class="WpfApp2_SavingMoney1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2_SavingMoney1"
+        mc:Ignorable="d"
+        Title="โปรแกรมคำนวณ การออม" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="btCalculate" Content="คำนวณ" HorizontalAlignment="Left" Height="21" Margin="318,202,0,0" VerticalAlignment="Top" Width="160" RenderTransformOrigin="0.5,0.5" Background="#FF625B5A" Foreground="#FFFFFBFB" Click="btCalculate_Click">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.202"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <TextBlock HorizontalAlignment="Left" Height="22" Margin="176,264,0,0" Text="ท่านต้องออมเงินเป็นจำนวน" TextWrapping="Wrap" VerticalAlignment="Top" Width="140"/>
+        <TextBlock HorizontalAlignment="Left" Height="21" Margin="80,145,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="239"><Run Language="th-th" Text="ปริมาณเงินที่ท่านต้องการใช้จ่าย"/></TextBlock>
+        <TextBox x:Name="txtExpect" HorizontalAlignment="Center" Height="21" Margin="0,145,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="158" Background="#FFEE8C19"/>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="79,103,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220"><Run Language="th-th" Text="ค่าใช้จ่ายต่อวัน"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="80,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="219"><Run Language="th-th" Text="รายได้ต่อวัน"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="500,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="64"><Run Language="th-th" Text="บาท "/><Run Text="/ "/><Run Language="th-th" Text="วัน"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="500,103,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="64"><Run Language="th-th" Text="บาท "/><Run Text="/ "/><Run Language="th-th" Text="วัน"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="500,143,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="64" Text="บาท"/>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="500,265,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="64"><Run Language="th-th" Text="วัน"/></TextBlock>
+        <TextBox x:Name="txtRevenue" HorizontalAlignment="Center" Height="20" Margin="0,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160"/>
+        <TextBox x:Name="txtCost" HorizontalAlignment="Center" Height="20" Margin="0,103,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="159"/>
+        <TextBox x:Name="txtNumberDay" HorizontalAlignment="Center" Height="21" Margin="0,264,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="159" IsEnabled="False"/>
+
+    </Grid>
+</Window>
